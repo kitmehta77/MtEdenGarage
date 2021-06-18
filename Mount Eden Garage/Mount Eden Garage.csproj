@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53F79E09-A11B-4343-BB49-534DAEB694B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mount_Eden_Garage</RootNamespace>
+    <AssemblyName>Mount Eden Garage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=1.1.25515.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DG.AdvancedDataGridView.1.1.25515.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddServiceForm.Designer.cs">
+      <DependentUpon>AddServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVehicleForm.Designer.cs">
+      <DependentUpon>AddVehicleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignPartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignPartForm.Designer.cs">
+      <DependentUpon>AssignPartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataController.Designer.cs">
+      <DependentUpon>DataController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteServiceForm.Designer.cs">
+      <DependentUpon>DeleteServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteVehicleForm.Designer.cs">
+      <DependentUpon>DeleteVehicleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet.cs">
+      <DependentUpon>MountEdenGarageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MountEdenGarageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MountEdenGarageDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MountEdenGarageDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MountEdenGarageDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MountEdenGarageDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MountEdenGarageDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet6.cs">
+      <DependentUpon>MountEdenGarageDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MountEdenGarageDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MountEdenGarageDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintInvoicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintInvoicesForm.Designer.cs">
+      <DependentUpon>PrintInvoicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintMechanicReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintMechanicReportForm.Designer.cs">
+      <DependentUpon>PrintMechanicReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemovePartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemovePartForm.Designer.cs">
+      <DependentUpon>RemovePartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateServiceForm.Designer.cs">
+      <DependentUpon>UpdateServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVehicleForm.Designer.cs">
+      <DependentUpon>UpdateVehicleForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddServiceForm.resx">
+      <DependentUpon>AddServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVehicleForm.resx">
+      <DependentUpon>AddVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignPartForm.resx">
+      <DependentUpon>AssignPartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataController.resx">
+      <DependentUpon>DataController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteServiceForm.resx">
+      <DependentUpon>DeleteServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteVehicleForm.resx">
+      <DependentUpon>DeleteVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintInvoicesForm.resx">
+      <DependentUpon>PrintInvoicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintMechanicReportForm.resx">
+      <DependentUpon>PrintMechanicReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RemovePartForm.resx">
+      <DependentUpon>RemovePartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateServiceForm.resx">
+      <DependentUpon>UpdateServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVehicleForm.resx">
+      <DependentUpon>UpdateVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MountEdenGarageDataSet.xsc">
+      <DependentUpon>MountEdenGarageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MountEdenGarageDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MountEdenGarageDataSet.xss">
+      <DependentUpon>MountEdenGarageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet1.xsc">
+      <DependentUpon>MountEdenGarageDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MountEdenGarageDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MountEdenGarageDataSet1.xss">
+      <DependentUpon>MountEdenGarageDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet2.xsc">
+      <DependentUpon>MountEdenGarageDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MountEdenGarageDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MountEdenGarageDataSet2.xss">
+      <DependentUpon>MountEdenGarageDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet3.xsc">
+      <DependentUpon>MountEdenGarageDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MountEdenGarageDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MountEdenGarageDataSet3.xss">
+      <DependentUpon>MountEdenGarageDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet4.xsc">
+      <DependentUpon>MountEdenGarageDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MountEdenGarageDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MountEdenGarageDataSet4.xss">
+      <DependentUpon>MountEdenGarageDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet5.xsc">
+      <DependentUpon>MountEdenGarageDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MountEdenGarageDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MountEdenGarageDataSet5.xss">
+      <DependentUpon>MountEdenGarageDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet6.xsc">
+      <DependentUpon>MountEdenGarageDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MountEdenGarageDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MountEdenGarageDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MountEdenGarageDataSet6.xss">
+      <DependentUpon>MountEdenGarageDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
